@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neez Payment</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/svgs/solid/credit-card.svg" type="image/svg+xml">
+    <script src="https://js.stripe.com/v3/"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h2><i class="fas fa-credit-card"></i> Make a Payment</h2>
+    <form id="payment-form">
+        <div id="card-element"></div>
+        <button type="submit" id="pay-button">
+            <i class="fas fa-check-circle"></i> Pay
+        </button>
+        <p id="payment-message"></p>
+    </form>
+    <div id="info">
+        <p><i class="fab fa-cc-visa"></i> 💳 4242 4242 4242 4242 (Visa)</p>
+        <p><i class="far fa-calendar-alt"></i> ✅ Expiry: Any future date (e.g., 12/30)</p>
+        <p><i class="fas fa-lock"></i> ✅CVC: Any 3-digit number (e.g., 123)</p>
+        <p><i class="fas fa-map-pin"></i> ✅ ZIP: Any 5-digit number (e.g., 12345)</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
